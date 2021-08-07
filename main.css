@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+  box-sizing:border-box;
+}
+nav{
+  display:flex;
+  background-color: #E98580;
+  padding: 20px;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  
+
+  
+}
+nav a{
+    color: #fff;
+    margin-left: 30px;
+    text-decoration: none;
+    
+}
+body{
+    background-color:#71EFA3;
+    font-family: 'lato' sans-serif;
+    margin: 0;
+    
+}
+header{
+    height: 100vh;
+    background-image: url("https://cdn.pixabay.com/photo/2017/08/10/03/31/macbook-2617705_960_720.jpg");
+    background-size: cover;
+    background-position: center center;
+  
+    position: relative;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+header h1{
+    font-size: 50px;
+}
+header h4{
+    font-size: 30px;
+    margin: 0;
+}
+header::after{
+    content: '';
+    position: absolute;
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.7;
+    
+
+}
+header *{
+    position: relative;
+    z-index: 2;
+    
+}
+#social{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+
+}
+
+.image{
+    border-radius: 20%;
+    padding: 15px;
+    width: 10%;
+}
+.container{
+    position: absolute;
+    top: 62%;
+    left: 42%;
+    padding: 30px;
+}
+  
+#social h1{
+    font-size: 50px;
+}
+#social h2{
+    font-size: 35px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #B5CDA3;
+    font-size: 25px;
+    padding: 20px;
+}
+.project-tile{
+    margin: 10px;
+    max-width: 250px;
+    text-decoration: none;
+   
+
+    
+    
+}
+.project-tile img{
+    max-width: 100%;
+}
+.project-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 810px;
+    flex-wrap: wrap;
+    margin: 20px auto 0;
+    
+
+}
+#projects h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+.project-tile p{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+#projects{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 100px;
+                                    
+}
+@media(max-width:485px){
+    #projects{
+        top: 550px;
+    }
+    #social{
+        top: 930px;
+    }
+    .container{
+        top: 67%;
+        left: 10%;
+    }
+    .image{
+        width: 18%;
+    }
+    footer{
+        position: relative;
+        top: 850px;
+    }
+}
